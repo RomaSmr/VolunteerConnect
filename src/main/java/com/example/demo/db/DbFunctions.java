@@ -1,6 +1,6 @@
 package com.example.demo.db;
 
-import com.example.requestdesktop.models.Request;
+import com.example.demo.models.Request;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 
