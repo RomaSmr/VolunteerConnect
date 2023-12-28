@@ -11,7 +11,7 @@ public class DbFunctions {
         Connection connection = null;
         try {
             Class.forName("org.postgresql.Driver");
-            connection = DriverManager.getConnection("jdbc:postgresql://localhost:5432/" + "Request", "postgres", "123");
+            connection = DriverManager.getConnection("jdbc:postgresql://localhost:5432/" + "Request", "postgres", "123456");
             if (connection != null) {
                 System.out.println("Подключение успешно!");
             } else {
