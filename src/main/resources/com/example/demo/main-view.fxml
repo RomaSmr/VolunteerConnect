@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane fx:id="anchorPane" prefHeight="400.0" prefWidth="723.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.requestdesktop.MainController">
+   <children>
+      <Text layoutX="316.0" layoutY="37.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Заявки">
+         <font>
+            <Font name="Calibri Bold" size="30.0" />
+         </font>
+      </Text>
+      <TableView fx:id="tableView" layoutY="61.0" prefHeight="342.0" prefWidth="723.0">
+        <columns>
+          <TableColumn fx:id="idTableColumn" prefWidth="51.99996793270111" text="Id" />
+          <TableColumn fx:id="nameTableColumn" prefWidth="130.4000015258789" text="Наименование" />
+            <TableColumn fx:id="descriptionTableColumn" prefWidth="133.59991455078125" text="Описание" />
+            <TableColumn fx:id="startDateTableColumn" prefWidth="139.99993896484375" text="Дата начала" />
+            <TableColumn fx:id="endDateTableColumn" prefWidth="132.80001831054688" text="Дата окончания" />
+            <TableColumn fx:id="statusTableColumn" prefWidth="134.39996337890625" text="Статус" />
+        </columns>
+      </TableView>
+      <ImageView fx:id="imageUpdateRequest" fitHeight="46.0" fitWidth="56.0" layoutX="663.0" layoutY="7.0" onMouseClicked="#updateRequest" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../icons/update.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <ImageView fx:id="imageDeleteRequest" fitHeight="46.0" fitWidth="56.0" layoutX="608.0" layoutY="7.0" onMouseClicked="#deleteRequest" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../icons/delete.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <ImageView fx:id="imageAddRequest" fitHeight="46.0" fitWidth="56.0" layoutX="14.0" layoutY="7.0" onMouseClicked="#addRequest" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../icons/add.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+   </children>
+</AnchorPane>

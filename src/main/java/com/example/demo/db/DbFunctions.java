@@ -1,7 +1,10 @@
 package com.example.demo.db;
 
+import com.example.requestdesktop.models.Request;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
+
+import java.sql.*;
 
 public class DbFunctions {
     public Connection connect_to_db() {
