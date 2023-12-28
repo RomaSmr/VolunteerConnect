@@ -1,7 +1,6 @@
 package com.example.demo.models;
 
 public class Request {
-    public class Request {
         String id, name, description, start_date, end_date, status;
 
         public Request(String id, String name, String description, String start_date, String end_date, String status) {
@@ -61,4 +60,4 @@ public class Request {
             this.status = status;
         }
     }
-}
+
