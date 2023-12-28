@@ -9,8 +9,7 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-
-<AnchorPane fx:id="anchorPane" prefHeight="400.0" prefWidth="723.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.requestdesktop.MainController">
+<AnchorPane fx:id="anchorPane" prefHeight="400.0" prefWidth="723.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.MainController">
    <children>
       <Text layoutX="316.0" layoutY="37.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Заявки">
          <font>
@@ -29,7 +28,7 @@
       </TableView>
       <ImageView fx:id="imageUpdateRequest" fitHeight="46.0" fitWidth="56.0" layoutX="663.0" layoutY="7.0" onMouseClicked="#updateRequest" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../../../icons/update.png" />
+            <Image url="@update.png" />
          </image>
          <cursor>
             <Cursor fx:constant="HAND" />
@@ -37,7 +36,7 @@
       </ImageView>
       <ImageView fx:id="imageDeleteRequest" fitHeight="46.0" fitWidth="56.0" layoutX="608.0" layoutY="7.0" onMouseClicked="#deleteRequest" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../../../icons/delete.png" />
+            <Image url="@delete.png" />
          </image>
          <cursor>
             <Cursor fx:constant="HAND" />
@@ -45,7 +44,7 @@
       </ImageView>
       <ImageView fx:id="imageAddRequest" fitHeight="46.0" fitWidth="56.0" layoutX="14.0" layoutY="7.0" onMouseClicked="#addRequest" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../../../icons/add.png" />
+            <Image url="@add.png" />
          </image>
          <cursor>
             <Cursor fx:constant="HAND" />
